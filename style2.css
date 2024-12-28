@@ -1,0 +1,798 @@
+@font-face {
+  font-family: PP mori;
+  src: url(./ppmori.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: PP mori;
+  color: #fff;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+.cursor{
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  position: fixed;
+  background-color: #EDBFFF;
+  z-index: 8;
+  transition: background-image ease 0.5s;
+  background-position: center;
+  background-size:cover ;
+  mix-blend-mode: difference;
+}
+.main{
+  background-color: #0F0D0D;
+  cursor: none;
+}
+
+.page1{
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  z-index: 9;
+  padding-top: 12vw;
+}
+
+.landing-page{
+  height: 100vh;
+  width: 100%;
+}
+
+#nav{
+  height: 55px;
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  position: fixed;
+  mix-blend-mode: difference;
+  z-index:102;
+}
+#nav img{
+  height: 27px;
+}
+#nav-part2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+#nav #circle{
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+#nav h4{
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+#nav h4:nth-child(1){
+  border-bottom: 1.5px solid #fff;
+}
+#nav-part2 a{
+    text-decoration: none;  /* Removes the underline */
+    color: inherit;         /* Makes the link inherit the color from its parent */  
+}
+
+
+.page1 h1{
+  font-size: 8vw;
+  font-weight: 300;
+  font-family: PP mori;
+  margin-left: 6vw;
+  transform-origin: left;
+}
+.page1 h2{
+  font-size: 8vw;
+  font-weight: 300;
+  transform-origin: left;
+
+  margin-left: 26vw;
+}
+
+.page1 video{
+  width: 80%;
+  margin-top: 10vw;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+
+.page2{
+  min-height: 80vh;
+  width: 100%;
+  padding: 100px 5vw;
+  border-bottom: 2px solid #6c6c6c;
+  position: relative;
+  z-index: 9;
+  /* background-color: aqua; */
+}
+
+.page2 h1{
+  font-size:7vw;
+  font-weight: 500;
+  color: #111;
+  /* background-color: #EDBFFF; */
+
+}
+.page2-container{
+  height: 60vh;
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 0 5vw; */
+  /* background-color: aquamarine; */
+}
+.page2-left{
+  /* background-color: blue; */
+  width: 40%;
+}
+.page2-right{
+  /* background-color: blue; */
+  width: 35%;
+  text-align: center;
+}
+.page2-left h2{
+  font-size: 4vw;
+  font-weight: 300;
+  color: #111;
+  line-height: 4vw;
+}
+.page2-right p{
+  width: 100%;
+  font-size: 6vh;
+  color: #111;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  line-height: 7vh;
+}
+.page2-right button{
+  width: 50%;
+  border-radius: 50px;
+  border: none;
+  padding: 4px 0;
+  background-color: #ba66db;
+  color: #111;
+  margin-top: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  font-size: 2vw;
+}
+
+.page3{
+  min-height: 250vh;
+  width: 100%;
+  padding-top: 100px;
+  position: relative;
+  z-index: 9;
+}
+
+.page3 h1{
+  font-size: 6.8vw;
+  font-weight: 300;
+  color: #fff;
+  margin-left: 100px;
+  margin-top: -40px;
+}
+.page3-part1{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 0 30px;
+  height: 110vh;
+
+}
+.page3-part1 img{
+  height: 450px;
+  width: 550px;
+  margin-top: 160px;
+  scale: 1;
+}
+.page3-part1:hover .img1{
+  scale: 1.1;
+  transition: all ease 0.5s;
+}
+.page3-part1:hover .img2{
+  scale: 1.1;
+  transition: all ease 0.5s;
+}
+.page3-part1:hover .img3{
+  scale: 1.1;
+  transition: all ease 0.5s;
+}
+.page3-part1:hover .img4{
+  scale: 1.1;
+  transition: all ease 0.5s;
+}
+.page3 .left{
+  position: absolute;
+  z-index: 9;
+  height: 450px;
+  width: 550px;
+
+}
+.page4{
+  min-height: 100vh;
+  width: 100%;
+  z-index: 9;
+  position: relative;
+  padding: 170px 100px;
+}
+.elem{
+  /* background-color: salmon; */
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.elem img{
+  position: absolute;
+  opacity: 0;
+  transition: all ease-out 0.5s;
+  transform: translateY(10%) rotate(2deg);
+}
+.elem img:nth-child(1){
+  left: 2%;
+}
+.elem img:nth-child(3){
+  right: 5%;
+}
+.text-div{
+  height: 16vh;
+  position: relative;
+  z-index: 9;
+  overflow: hidden;
+}
+.elem h1{
+  font-size: 7.5vw;
+  font-weight: 600;
+  transition: all ease-out 0.5s;
+}
+
+.elem:hover h1{
+  transform: translateY(-100%);
+  color: #EDBFFF;
+}
+.elem:hover img{
+  opacity: 1;
+  transform: translateY(0%) rotate(0deg);
+
+}
+
+
+footer{
+  margin-top: 50vh;
+  height: 50vh;
+  width: 100%;
+}
+
+
+
+/* rishi */
+
+@import url("https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap");
+
+.page0 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* background: #212121; */
+  margin-top: -300px;
+  position: relative;
+}
+.style-heading{
+  color: #000;
+  font-size: 8vh;
+  position: absolute;
+  font-weight: 800;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.page0 .card {
+  position: relative;
+  width: 320px;
+  height: 480px;
+  background: #191919;
+  border-radius: 20px;
+  overflow: hidden;
+  top: 60%;
+  /* right: 40%; */
+  margin-top: -30vh;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  width: 100%;
+  height: 100%;
+  transform: skewY(345deg);
+  transition: 0.5s;
+}
+
+.card:hover::before {
+  top: -70%;
+  transform: skewY(390deg);
+}
+
+.card::after {
+  content: "VisionX";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 6em;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.card .imgBox {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  z-index: 1;
+}
+/*
+.card .imgBox img {
+    max-width: 100%;
+    
+    transition: .5s;
+}
+
+.card:hover .imgBox img {
+    max-width: 50%;
+      
+}
+*/
+.card .contentBox {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.card .contentBox h3 {
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.card .contentBox .price {
+  font-size: 24px;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.card .contentBox .buy {
+  position: relative;
+  top: 100px;
+  opacity: 0;
+  padding: 10px 30px;
+  margin-top: 15px;
+  color: #000000;
+  text-decoration: none;
+  background: #ffce00;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+
+.card:hover .contentBox .buy {
+  top: 0;
+  opacity: 1;
+}
+
+.mouse {
+  height: 300px;
+  width:auto;
+}
+
+.card3 {
+  position: relative;
+  width: 320px;
+  height: 480px;
+  background: #191919;
+  border-radius: 20px;
+  overflow: hidden;
+  top: 60%;
+  /* right: 20%; */
+}
+
+.card3::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  width: 100%;
+  height: 100%;
+  background: #ffce00;
+  transform: skewY(345deg);
+  transition: 0.5s;
+}
+
+.card3:hover::before {
+  top: -70%;
+  transform: skewY(390deg);
+}
+
+.card3::after {
+  content: "VisionX";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 6em;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.card3 .imgBox {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  z-index: 1;
+}
+/*
+.card .imgBox img {
+    max-width: 100%;
+    
+    transition: .5s;
+}
+
+.card:hover .imgBox img {
+    max-width: 50%;
+      
+}
+*/
+.card3 .contentBox {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.card3 .contentBox h3 {
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.card3 .contentBox .price {
+  font-size: 24px;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.card3 .contentBox .buy {
+  position: relative;
+  top: 100px;
+  opacity: 0;
+  padding: 10px 30px;
+  margin-top: 15px;
+  color: #000000;
+  text-decoration: none;
+  background: #ffce00;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+
+.card3:hover .contentBox .buy {
+  top: 0;
+  opacity: 1;
+}
+
+.mouse {
+  height: 300px;
+  width: auto;
+}
+.card{
+
+}
+.card2 {
+  position: relative;
+  width: 320px;
+  height: 480px;
+  background: #191919;
+  border-radius: 20px;
+  overflow: hidden;
+  top: 60%;
+  margin-top: 1000px;
+  /* right: 35%; */
+}
+
+.card2::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  width: 100%;
+  height: 100%;
+  background: #ffce00;
+  transform: skewY(345deg);
+  transition: 0.5s;
+}
+
+.card2:hover::before {
+  top: -70%;
+  transform: skewY(390deg);
+}
+
+.card2::after {
+  content: "VisionX";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 6em;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.card2 .imgBox {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  z-index: 1;
+}
+/*
+.card .imgBox img {
+    max-width: 100%;
+    
+    transition: .5s;
+}
+
+.card:hover .imgBox img {
+    max-width: 50%;
+      
+}
+*/
+.card2 .contentBox {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.card2 .contentBox h3 {
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.card2 .contentBox .price {
+  font-size: 24px;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.card2 .contentBox .buy {
+  position: relative;
+  top: 100px;
+  opacity: 0;
+  padding: 10px 30px;
+  margin-top: 15px;
+  color: #000000;
+  text-decoration: none;
+  background: #ffce00;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+
+.card2:hover .contentBox .buy {
+  top: 0;
+  opacity: 1;
+}
+
+.mouse {
+  height: 300px;
+  width: auto;
+}
+.card4 {
+  position: relative;
+  width: 320px;
+  height: 480px;
+  background: #191919;
+  border-radius: 20px;
+  overflow: hidden;
+  top: 80%;
+  margin-top: 1000px;
+  /* right: 35%; */
+}
+
+.card4::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  width: 100%;
+  height: 100%;
+  background: #ffce00;
+  transform: skewY(345deg);
+  transition: 0.5s;
+}
+
+.card4:hover::before {
+  top: -70%;
+  transform: skewY(390deg);
+}
+
+.card4::after {
+  content: "VisionX";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 6em;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.card4 .imgBox {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  z-index: 1;
+}
+/*
+.card .imgBox img {
+    max-width: 100%;
+    
+    transition: .5s;
+}
+
+.card:hover .imgBox img {
+    max-width: 50%;
+      
+}
+*/
+.card4 .contentBox {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.card4 .contentBox h3 {
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.card4 .contentBox .price {
+  font-size: 24px;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.card4 .contentBox .buy {
+  position: relative;
+  top: 100px;
+  opacity: 0;
+  padding: 10px 30px;
+  margin-top: 15px;
+  color: #000000;
+  text-decoration: none;
+  background: #ffce00;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+
+.card4:hover .contentBox .buy {
+  top: 0;
+  opacity: 1;
+}
+
+.mouse {
+  height: 300px;
+  width: auto;
+}
+.page0{
+  gap: 10px;
+}
+
+
+#card-footer{
+  padding: 2% 7%;
+  color: #646771;
+  background-color: #16151a;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul >li{
+  padding: 4px;
+}
+
+ul > li:hover{
+  color:#957bda;
+  cursor: pointer;
+}
+
+hr{
+  border-width: 3px;
+}
+.social > i{
+  padding: 1%;
+  font-size: 15px;
+}
+
+.social > i:hover{
+  color:#957bda;
+  cursor:pointer;
+}
+
+.policy > div{
+  padding: 4px;
+}
+
+.heading{
+  font-family: 'Titillium Web', sans-serif;
+  color: white;
+}
+
+.divider{
+  border-top: 2px solid rgba(189, 196, 203, 0.5);;
+}
+
+footer{
+  border-radius: 5px
+}
+.social .mt-2 .mb-3{
+  margin-left: 10px;
+}
